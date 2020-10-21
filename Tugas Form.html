@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tugas Membuat Form</title>
+</head>
+<body>
+    
+<form id="create_account" action="/signup" method"post">
+    <fieldset style="background-color: powderblue;">
+        <legend>Sign Up</legend>
+        <li type="none">
+            <label for="name">Nama</label>
+            <div>
+                <input type="text" name="nama" id="nama" size="30" value="">
+            </div>
+        </li>
+        <li type="none">
+            <label for=tanggal_lahir">tanggal lahir</label>
+            <div>
+                <input type="date" name="tanggal_lahir" id="tanggal_lahir" size="30" value="2020-10-21">
+            </div>
+        </li>
+        <li type="none">
+            <label for="jk">Jenis Kelamin</label>
+            <div>
+                <input type="radio" name="jk" value="L"/>Laki-laki
+                <input type="radio" name="jk" value="P"/>Perempuan
+            </div>
+        </li>
+        <li type="none">
+            <label for="alamat">Alamat</label>
+            <div>
+                <input type="text" id="alamat" size="30" value="">
+            </div>
+        </li>
+        <li type="none">
+            <label for="email">Email</label>
+            <div>
+                <input type="text" id="email" size="30" value="" required>
+            </div>
+        </li>
+        <li type="none">
+            <label for="password">Password</label>
+            <div>
+                <input type="password" name="password" id="password" size="30" value="" autocomplete="off" placeholder="8-10 charcters"/>
+            </div>
+        </li>
+        <li type="none">
+            <label for="konfirmasi_password">Konfirmasi Password</label>
+            <div>
+                <input type="password" name="password" id="password" size="30" value="" placeholder="ulangi password anda">
+            </div>
+        </li>
+        <button type="submit">Daftar</button>
+    </fieldset>
+</form>
+</body>
+</html>
